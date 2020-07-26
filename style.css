@@ -1,0 +1,144 @@
+.pageContainer {
+    width: 960px;
+    margin: 0 auto;
+    background: #EFEFEF;
+    display: flex;
+    flex-direction: column;
+    font-family: arial,sans-serif;
+}
+
+.headerSection {
+    margin: 0;
+    padding: 0em;
+    background: #FFFFFF;
+    border-bottom: 5px solid #BFBFBF;
+    box-shadow-bottom: 0px #000000;
+    display: block;
+    text-align: center;
+    font-weight: 100;
+    color: #333333;
+    font-size: 32px;
+    padding: 18px 0px;
+}
+
+.buttonSection {
+    float: right;
+}
+
+button {
+    width: 240px;
+    background: #72c3dc;
+    padding: 15px 50px;
+    margin: 25px 22px 0 10px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 5px 0px #2B8EAD;
+    font-weight: 100;
+    overflow: visible;
+    display: block;
+    position: relative;
+    top: 0px;
+    font-family: inherit;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+button:active, button:focus {
+    outline: none;
+    border: none;
+}
+
+.cardsSection {
+    overflow: hidden;
+    min-height: 168px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.cardsSection div {
+    padding: 0.4em 0.9em;
+    margin: 0px -3px;
+    font-size: 96px;
+    color: #FFFFFF;
+    font-weight: 100;
+}
+
+.card3, .card5,.card9 {
+    background: #2F454E;
+}
+.card2,.card4 {
+    background: #2B8EAD;
+}
+.card1,.card8 {
+    background: #6F98A8;
+}
+.card6,.card7 {
+    background: #BFBFBF;
+}
+
+.footerSection {
+    font-size: 0.9em;
+    text-align: center;
+    font-style: italic;
+    color: #333333;
+    padding: 15px 5px;
+}
+
+@media screen and (max-width: 960px) {
+    .pageContainer {
+        background: none;
+        width: 100%;
+    }
+    .buttonSection {
+        margin: 16px;
+        width: auto;
+        border: 0;
+        text-align: center;
+        float: none;
+    }
+    .headerSection {
+        background: #333333;
+        color: #FFFFFF;
+        line-height: 20px;
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+    button {
+        overflow: visible;
+        padding: 14px 10px;
+        display: inline-block;
+        margin: 2px;
+        width: 86px;
+        font-size: 14px;
+    }
+    .cardsSection {
+        background: #FFFFFF;
+        flex-direction: column;
+    }
+    .cardsSection div {
+        padding: 10px;
+        margin: 0;
+        color: #333333;
+        font-size: 1.5em;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    .card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8, .card9 {
+        background: #EFEFEF;
+    }
+    .card3, .card5, .card9 {
+        border-left: 10px solid #2F454E;
+    }
+    .card2, .card4 {
+        border-left: 10px solid #2B8EAD;
+    }
+    .card1, .card8 {
+        border-left: 10px solid #6F98A8;
+    }
+    .card6, .card7 {
+        border-left: 10px solid #BFBFBF;
+    }
+}
